@@ -54,6 +54,7 @@ import '../../../../utils/codemirror-search';
 import beepUrl from '../../../../sounds/audioAlert.mp3';
 import RightArrowIcon from '../../../../images/right-arrow.svg';
 import LeftArrowIcon from '../../../../images/left-arrow.svg';
+import FileIcon from '../../../../images/folder-padded.svg';
 import { getHTMLFile } from '../../reducers/files';
 import { selectActiveFile } from '../../selectors/files';
 
@@ -546,6 +547,7 @@ class Editor extends React.Component {
                     this.props.closeProjectOptions();
                   }}
                 >
+                  <FileIcon />
                   <LeftArrowIcon focusable="false" aria-hidden="true" />
                 </button>
                 <button
@@ -553,6 +555,7 @@ class Editor extends React.Component {
                   className="sidebar__expand"
                   onClick={this.props.expandSidebar}
                 >
+                  <FileIcon />
                   <RightArrowIcon focusable="false" aria-hidden="true" />
                 </button>
                 <div className="editor__file-name">
